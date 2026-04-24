@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhruv Agarwal — Finance & Advisory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ticker -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>Oracle Gen-AI Professional</span><span class="sep">•</span>
+      <span>DCF Valuation <em class="up">+2.14%</em></span><span class="sep">•</span>
+      <span>HDFC Merger Analysis <em class="up">+0.87%</em></span><span class="sep">•</span>
+      <span>FP&amp;A Dashboards <em class="up">+1.23%</em></span><span class="sep">•</span>
+      <span>SAP Activate Certified</span><span class="sep">•</span>
+      <span>~$100K Tax Savings Identified</span><span class="sep">•</span>
+      <span>CAR <em class="up">18.4%</em></span><span class="sep">•</span>
+      <span>ROAS <em class="up">2.1x</em></span><span class="sep">•</span>
+      <span>NIM <em class="dn">▼0.22%</em></span><span class="sep">•</span>
+      <span>McKinsey Forward Program</span><span class="sep">•</span>
+      <span>Oracle Gen-AI Professional</span><span class="sep">•</span>
+      <span>DCF Valuation <em class="up">+2.14%</em></span><span class="sep">•</span>
+      <span>HDFC Merger Analysis <em class="up">+0.87%</em></span><span class="sep">•</span>
+      <span>FP&amp;A Dashboards <em class="up">+1.23%</em></span><span class="sep">•</span>
+      <span>SAP Activate Certified</span><span class="sep">•</span>
+      <span>~$100K Tax Savings Identified</span><span class="sep">•</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav id="nav">
+    <div class="nav-logo">
+      <span class="logo-badge">DA</span>
+      <span class="logo-name">Dhruv Agarwal</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <a href="Dhruv_Agarwal_Financial_Consulting_Resume.pdf" download class="btn-resume">Resume</a>
+    </div>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mob-link">About</a>
+    <a href="#experience" class="mob-link">Experience</a>
+    <a href="#projects" class="mob-link">Projects</a>
+    <a href="#skills" class="mob-link">Skills</a>
+    <a href="#credentials" class="mob-link">Credentials</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </div>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="about" class="hero">
+    <div class="hero-left">
+      <div class="availability-badge">
+        <span class="pulse-dot"></span>
+        Available for consulting engagements · Pune, IN
+      </div>
+      <h1 class="hero-headline">
+        Precision finance,<br />
+        <em>built on structure &amp;<br />data.</em>
+      </h1>
+      <p class="hero-sub">
+        Finance &amp; technology professional focused on <strong>valuation, advisory,</strong> and
+        <strong>data-driven decision making</strong> — translating complex financial data into
+        client-ready strategic insights.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects →</a>
+        <a href="Dhruv_Agarwal_Financial_Consulting_Resume.pdf" download class="btn-ghost">Download Resume ↓</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- Terminal Card -->
+      <div class="terminal-card" id="terminalCard">
+        <div class="term-header">
+          <div class="term-dots">
+            <span class="dot dot-orange"></span>
+            <span class="dot dot-grey"></span>
+            <span class="dot dot-grey"></span>
+          </div>
+          <span class="term-title">portfolio.terminal</span>
+          <span class="term-live">LIVE</span>
+        </div>
+        <div class="term-body">
+          <div class="term-row">
+            <span class="term-key">NAME</span>
+            <span class="term-val" id="t-name"></span>
+          </div>
+          <div class="term-row">
+            <span class="term-key">ROLE</span>
+            <span class="term-val" id="t-role"></span>
+          </div>
+          <div class="term-row">
+            <span class="term-key">FIRM</span>
+            <span class="term-val" id="t-firm"></span>
+          </div>
+          <div class="term-row">
+            <span class="term-key">FOCUS</span>
+            <span class="term-val" id="t-focus"></span>
+          </div>
+          <div class="term-row">
+            <span class="term-key">STACK</span>
+            <span class="term-val" id="t-stack"></span>
+          </div>
+        </div>
+        <div class="term-metrics">
+          <div class="metric">
+            <span class="metric-label">CAR</span>
+            <span class="metric-val up">▲ 18.4%</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">NIM</span>
+            <span class="metric-val dn">▼ 0.22%</span>
+          </div>
+          <div class="metric">
+            <span class="metric-label">ROAS</span>
+            <span class="metric-val up">▲ 2.1x</span>
+          </div>
+        </div>
+        <div class="term-chart">
+          <svg viewBox="0 0 320 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M0 50 C30 45 50 40 80 38 S110 30 140 28 S180 20 210 18 S260 12 290 8 L320 6 L320 60 L0 60Z" fill="url(#chartGrad)"/>
+            <path d="M0 50 C30 45 50 40 80 38 S110 30 140 28 S180 20 210 18 S260 12 290 8 L320 6" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="term-tags">
+          <span class="tag">SAP Activate</span>
+          <span class="tag">Oracle Gen-AI</span>
+          <span class="tag">CFI Finance</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ EXPERIENCE ═══════════ -->
+  <section id="experience" class="section">
+    <div class="section-number">02</div>
+    <div class="section-label-col">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-sub">Selected roles and simulations.</p>
+    </div>
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <span class="tl-role">Operations Analyst — Finance &amp; Reporting</span>
+            <span class="tl-firm accent">· DeltaX</span>
+            <span class="tl-date">Mar 2026 — Present</span>
+          </div>
+          <ul>
+            <li>Optimized large-scale campaign analytics (Cost, CPL, Leads, ROAS) using advanced Excel, driving a <strong>~13% improvement</strong> in cross-functional decision-making efficiency.</li>
+            <li>Delivered ROI-driven budget reports synthesizing multi-source performance metrics into stakeholder presentations, enabling senior leadership to realign cost targets and revenue forecasts.</li>
+            <li>Streamlined cross-functional reporting workflows through process redesign — reducing manual effort and accelerating insight delivery.</li>
+            <li>Built dynamic Excel dashboards and KPI trackers improving transparency across business units.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <span class="tl-role">Investment Banking — Advanced Simulation</span>
+            <span class="tl-firm accent">· Citi · Forage</span>
+            <span class="tl-date">Jul 2024</span>
+          </div>
+          <ul>
+            <li>Developed a <strong>5-year income statement projection</strong> in Excel and spread comparable company analysis (Comps) across 5 industry peers.</li>
+            <li>Delivered a client-ready valuation summary with actionable insights.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <span class="tl-role">Tax Advisory Simulation</span>
+            <span class="tl-firm accent">· KPMG · Forage</span>
+            <span class="tl-date">Jun 2025</span>
+          </div>
+          <ul>
+            <li>Identified <strong>~$100K in federal tax savings</strong> via Excel-based tax inventory planning and scenario analysis.</li>
+            <li>Applied Big-4 structured problem-solving frameworks to client deliverables.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <span class="tl-role">Investment Banking Job Simulation</span>
+            <span class="tl-firm accent">· J.P. Morgan · Forage</span>
+            <span class="tl-date">Jun 2024</span>
+          </div>
+          <ul>
+            <li>Executed end-to-end M&amp;A advisory workflow: target identification, due diligence, auction modeling.</li>
+            <li>Delivered a formal investment recommendation to senior stakeholders.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <span class="tl-role">McKinsey Forward Program</span>
+            <span class="tl-firm accent">· McKinsey &amp; Company</span>
+            <span class="tl-date">Mar 2026 — Present</span>
+          </div>
+          <ul>
+            <li>Applied structured problem-solving and executive communication frameworks; joined a global advisory alumni network of 200,000+ professionals.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <span class="tl-role">Agile Project Management Simulation</span>
+            <span class="tl-firm accent">· J.P. Morgan · Forage</span>
+            <span class="tl-date">Jun 2024</span>
+          </div>
+          <ul>
+            <li>Led Scrum team daily standups and facilitated sprint reviews and retrospectives, aligning deliverables with client expectations.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <section id="projects" class="section">
+    <div class="section-number">03</div>
+    <div class="section-label-col">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Applied finance and analytics work.</p>
+    </div>
+    <div class="projects-col">
+      <!-- Filter -->
+      <div class="proj-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="valuation">Valuation</button>
+        <button class="filter-btn" data-filter="ma">M&amp;A</button>
+        <button class="filter-btn" data-filter="analytics">Analytics</button>
+        <button class="filter-btn" data-filter="fpa">FP&amp;A</button>
+        <button class="filter-btn" data-filter="tax">Tax</button>
+        <button class="filter-btn" data-filter="tech">Tech</button>
+      </div>
+
+      <div class="proj-grid">
+
+        <div class="proj-card featured" data-tags="valuation fpa analytics">
+          <div class="proj-meta">
+            <span class="proj-stat">10y horizon</span>
+            <span class="proj-badge">Case Study</span>
+          </div>
+          <h3>DCF Valuation &amp; Financial Forecasting</h3>
+          <p>Built a 5–10 year DCF valuation model with dynamic forecasting, WACC calibration and sensitivity tables — stress-testing key value drivers across revenue growth, EBITDA and terminal assumptions.</p>
+          <div class="proj-tags">
+            <span class="ptag">Valuation</span>
+            <span class="ptag">FP&amp;A</span>
+            <span class="ptag">Analytics</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-stat-sm">10y horizon &nbsp;·&nbsp; WACC sens.</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-tags="ma valuation analytics">
+          <div class="proj-meta">
+            <span class="proj-stat">15+ KPIs</span>
+            <span class="proj-badge ma">M&amp;A Research</span>
+          </div>
+          <h3>HDFC Ltd × HDFC Bank — Merger Analysis</h3>
+          <p>In-depth M&amp;A study across 15+ financial metrics — loan book, deposits, profitability and CAR. Processed ₹30T+ of combined assets to surface CASA-ratio evolution, NIM compression and post-merger margin impact.</p>
+          <div class="proj-tags">
+            <span class="ptag">M&amp;A</span>
+            <span class="ptag">Valuation</span>
+            <span class="ptag">Analytics</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-stat-sm">15+ KPIs &nbsp;·&nbsp; ₹30T+ AUM</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-tags="analytics fpa">
+          <div class="proj-meta">
+            <span class="proj-stat">+13% decisions</span>
+            <span class="proj-badge ops">Operations</span>
+          </div>
+          <h3>Campaign ROI &amp; FP&amp;A Dashboards</h3>
+          <p>Productionised Excel + Power BI dashboards tracking CPL, ROAS and budget pacing across channels — directly informing cost realignment and revenue forecasting for senior leadership.</p>
+          <div class="proj-tags">
+            <span class="ptag">Analytics</span>
+            <span class="ptag">FP&amp;A</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-stat-sm">+13% efficiency &nbsp;·&nbsp; Power BI</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-tags="tax">
+          <div class="proj-meta">
+            <span class="proj-stat">~$100K saved</span>
+            <span class="proj-badge tax">Tax Advisory</span>
+          </div>
+          <h3>Federal Tax Savings Planner</h3>
+          <p>Scenario-based tax inventory planner built in Excel for a simulated KPMG engagement — identifying roughly $100K in federal tax savings through structured optimisation of position schedules.</p>
+          <div class="proj-tags">
+            <span class="ptag">Tax</span>
+            <span class="ptag">Advisory</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-stat-sm">~$100K identified &nbsp;·&nbsp; KPMG sim</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-tags="ma valuation">
+          <div class="proj-meta">
+            <span class="proj-stat">End-to-end</span>
+            <span class="proj-badge">IB Simulation</span>
+          </div>
+          <h3>M&amp;A Advisory — J.P. Morgan Simulation</h3>
+          <p>Executed full M&amp;A workflow from target identification through auction modeling, due diligence and formal investment recommendation to senior stakeholders.</p>
+          <div class="proj-tags">
+            <span class="ptag">M&amp;A</span>
+            <span class="ptag">Valuation</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-stat-sm">5-peer comps &nbsp;·&nbsp; Forage</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-tags="tech">
+          <div class="proj-meta">
+            <span class="proj-stat">Full-stack</span>
+            <span class="proj-badge tech">Tech</span>
+          </div>
+          <h3>Full-Stack eGames Platform</h3>
+          <p>Designed and developed a full-stack eGames platform using HTML, CSS, JavaScript, PHP, Python and SQL — demonstrating cross-functional technology skills for digital transformation work.</p>
+          <div class="proj-tags">
+            <span class="ptag">Tech</span>
+            <span class="ptag">Full-stack</span>
+          </div>
+          <div class="proj-footer">
+            <span class="proj-stat-sm">PHP · Python · SQL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <section id="skills" class="section">
+    <div class="section-number">04</div>
+    <div class="section-label-col">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">Grouped for clarity.</p>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <div class="skill-card-title">— FINANCIAL MODELLING</div>
+        <div class="skill-tags">
+          <span>DCF</span><span>LBO</span><span>Comparable Co. Analysis</span>
+          <span>M&amp;A Modelling</span><span>Projections</span><span>FP&amp;A</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">— ADVISORY &amp; ANALYSIS</div>
+        <div class="skill-tags">
+          <span>Financial Statement Analysis</span><span>Due Diligence</span>
+          <span>Business Valuation</span><span>Regulatory Reporting</span>
+          <span>Tax Advisory</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">— CONSULTING SKILLS</div>
+        <div class="skill-tags">
+          <span>Stakeholder Management</span><span>Change Management</span>
+          <span>Business Process Optimization</span>
+          <span>Data-Driven Decision Making</span><span>Agile / Scrum</span>
+          <span>Strategic Analysis</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">— TOOLS &amp; TECHNOLOGY</div>
+        <div class="skill-tags">
+          <span>Excel (VBA, Pivots)</span><span>Bloomberg Terminal</span>
+          <span>SAP Activate</span><span>SAP S/4HANA</span>
+          <span>SAP Signavio</span><span>Power BI</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ CREDENTIALS ═══════════ -->
+  <section id="credentials" class="section">
+    <div class="section-number">05</div>
+    <div class="section-label-col">
+      <h2 class="section-title">Credentials</h2>
+      <p class="section-sub">Certifications &amp; recognitions.</p>
+    </div>
+    <div class="cred-list">
+
+      <div class="cred-item">
+        <div class="cred-info">
+          <span class="cred-name">SAP Certified Project Manager — SAP Activate (C_ACT_2601)</span>
+          <span class="cred-org">SAP</span>
+        </div>
+        <span class="cred-date">Mar 2026</span>
+      </div>
+
+      <div class="cred-item">
+        <div class="cred-info">
+          <span class="cred-name">Oracle Generative AI Professional</span>
+          <span class="cred-org">Oracle University</span>
+        </div>
+        <span class="cred-date">Aug 2025</span>
+      </div>
+
+      <div class="cred-item">
+        <div class="cred-info">
+          <span class="cred-name">Finance &amp; Financial Markets — 10-Course Specialization</span>
+          <span class="cred-org">CFI / Coursera</span>
+        </div>
+        <span class="cred-date">Oct 2025</span>
+      </div>
+
+      <div class="cred-item">
+        <div class="cred-info">
+          <span class="cred-name">Microsoft Certified Business Analyst — 6-Course Specialization</span>
+          <span class="cred-org">Microsoft / Coursera</span>
+        </div>
+        <span class="cred-date">Jun 2025</span>
+      </div>
+
+      <div class="cred-item">
+        <div class="cred-info">
+          <span class="cred-name">Investment Banking: Financial Analysis &amp; Valuation (Honors)</span>
+          <span class="cred-org">University of Illinois / Coursera</span>
+        </div>
+        <span class="cred-date">Aug 2024</span>
+      </div>
+
+      <div class="cred-item">
+        <div class="cred-info">
+          <span class="cred-name">Apple Stock &amp; Financials — Bloomberg Terminal</span>
+          <span class="cred-org">Coursera</span>
+        </div>
+        <span class="cred-date">Jan 2026</span>
+      </div>
+
+      <div class="cred-item">
+        <div class="cred-info">
+          <span class="cred-name">Digital Skills: Artificial Intelligence (93%)</span>
+          <span class="cred-org">Accenture / FutureLearn</span>
+        </div>
+        <span class="cred-date">—</span>
+      </div>
+
+    </div>
+
+    <!-- Education -->
+    <div class="edu-block">
+      <div class="edu-label">Education</div>
+      <div class="edu-content">
+        <div class="edu-degree">Bachelor of Business Administration — Information Technology (BBA-IT)</div>
+        <div class="edu-school">Symbiosis International University (SICSR), Pune &nbsp;·&nbsp; 2023 – 2026</div>
+        <div class="edu-notes">Capital Finance &amp; ITIL · 15+ professional certifications · Research Paper Selection · Chess &amp; Tennis State-level Awardee</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <div class="section-number">06</div>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-sub">Let's build something precise.</p>
+      </div>
+      <div class="contact-right">
+        <div class="contact-terminal">
+          <div class="term-header">
+            <div class="term-dots">
+              <span class="dot dot-orange"></span>
+              <span class="dot dot-grey"></span>
+              <span class="dot dot-grey"></span>
+            </div>
+            <span class="term-title">contact.sh</span>
+          </div>
+          <div class="contact-body">
+            <div class="c-row"><span class="c-key">$</span> <span class="c-label">EMAIL</span> <a href="mailto:dhruvag2006@outlook.com" class="c-val">dhruvag2006@outlook.com</a></div>
+            <div class="c-row"><span class="c-key">$</span> <span class="c-label">PHONE</span> <span class="c-val">+91 7010189699</span></div>
+            <div class="c-row"><span class="c-key">$</span> <span class="c-label">LOCATION</span> <span class="c-val">Pune, Maharashtra, IN</span></div>
+            <div class="c-row"><span class="c-key">$</span> <span class="c-label">LINKEDIN</span> <a href="https://linkedin.com/in/dhruv2006" target="_blank" rel="noopener" class="c-val">linkedin.com/in/dhruv2006</a></div>
+            <div class="c-row blink-row"><span class="c-key">$</span> <span class="c-blink">█</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span>© 2026 Dhruv Agarwal · Pune, IN</span>
+    <span>Finance &amp; Advisory · SAP Certified · Oracle Gen-AI</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
